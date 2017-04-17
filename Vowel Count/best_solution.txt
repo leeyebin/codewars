@@ -2,6 +2,9 @@ public class Vowels {
 
     public static int getCount(String str) {
         return str.replaceAll("(?i)[^aeiou]", "").length();
+	//(?!) 앞부분에 넣어주면 대소문자를 구분하지 않음
+	//[] 문자의 집합이나 범위를 나타내며 두분자 사이는 -기호로 범위를 나타낸다.
+	//[]내에 ^가 선행하여 존재하면 not을 나타낸다.
     }
 
 }
