@@ -1,0 +1,5 @@
+정규식으로 어떻게 안될까하고 정규식을 찾아보다가 생각보다 잘 안되어 그냥 일반적인 풀이로 풀었다.
+역시나 베스트솔루션은 정규식을..
+
+아파치 라이브러리(StringUtils.countMatches)나 스프링 라이브러리(StringUtils.countOccurrencesOf)
+부분도 찾아볼 것
