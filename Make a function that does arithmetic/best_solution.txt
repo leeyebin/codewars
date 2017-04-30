@@ -1,0 +1,27 @@
+//자바8을 사용한 해답
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
+import java.util.function.BinaryOperator;
+
+/**
+ * look: no if
+ */
+public class ArithmeticFunction {
+  static Map<String, BinaryOperator<Integer>> operators = new HashMap<>();
+
+  static {
+    operators.put("add", (a, b) -> a + b);
+    operators.put("subtract", (a, b) -> a - b);
+    operators.put("multiply", (a, b) -> a * b);
+    operators.put("divide", (a, b) -> a / b);
+  }
+
+  public static int arithmetic(int a, int b, String operator) {
+    return arithmetic(a, b, operators.get(operator));
+  }
+
+  private static Integer arithmetic(int a, int b, BinaryOperator<Integer> operator) {
+    return Optional.ofNullable(operator).orElse((x, y) -> 0).apply(a, b);
+  }
+}
