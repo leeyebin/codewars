@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class SqInRect {
+  
+  public static List<Integer> sqInRect(int l, int w) {
+    if(l == w)
+      return null;
+    else if(l > w)
+      return sqInRect(w, l);
+      
+    List<Integer> answer = new ArrayList<>();
+    answer.add(w);
+    answer.addAll(sqInRect(w, l - w));
+    return answer;
+  }
+}
