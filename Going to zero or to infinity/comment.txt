@@ -1,0 +1,4 @@
+NaN
+Infinite
+
+±×¸®°í BigDecimal
