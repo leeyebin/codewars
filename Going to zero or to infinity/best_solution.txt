@@ -16,3 +16,29 @@ public class Suite {
         return bd.doubleValue();
     }
 }
+
+========================================================================================================
+public class Suite {
+  
+  public static double going(int n) {
+      double result = 1.0;
+      double frac = 1.0;
+      while (n > 1) {
+          frac /= n--;
+          result += frac;
+      }
+      return (int) (result * 1e6) / 1e6;
+  }
+}
+
+========================================================================================================
+public class Suite {
+  
+  public static double going(int n) {
+    if( n==1){
+      return 1;
+    }    
+    return Math.floor(((going(n-1)/n)+1) * 1000000) / 1000000;
+  }
+}
+========================================================================================================
