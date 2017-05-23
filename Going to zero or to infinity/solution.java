@@ -25,3 +25,22 @@ public class Solution {
 		return dresult;
 	}
 }
+////////////////////////////////////////////////////////////
+
+import java.math.BigDecimal;
+
+public class Suite {
+	
+	public static double going(int n) {
+		BigDecimal fact = new BigDecimal("1");
+		BigDecimal result = new BigDecimal("0");
+		
+		for(int k=1; k<=n; k++){
+			fact = fact.multiply(BigDecimal.valueOf(k));
+			result = result.add(fact);
+		}
+		
+		result = result.divide(fact, 6, BigDecimal.ROUND_FLOOR);
+        return result.doubleValue();
+	}
+}
