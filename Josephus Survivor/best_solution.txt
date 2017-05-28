@@ -1,0 +1,33 @@
+import java.util.Arrays;
+
+public class JosephusSurvivor {
+  public static int josephusSurvivor(final int n, final int k) {
+    if(n == 1)
+      return 1;
+    
+    return (josephusSurvivor(n - 1, k) + k - 1) % n + 1;
+  }  
+}
+
+////////////////////////////////////////////////////////////////////////
+
+public class JosephusSurvivor {
+  public static int josephusSurvivor(final int n, final int k) {
+    int remaining = 0;
+    for (int i = 2; i <= n; i++) {
+      remaining = (remaining + k) % i;
+    }
+    
+    return remaining + 1;
+  }  
+}
+
+////////////////////////////////////////////////////////////////////////
+
+import java.util.*;
+
+public class JosephusSurvivor {
+  public static int josephusSurvivor(final int n, final int k) {
+    return n == 1 ? 1 : (josephusSurvivor(n - 1, k) + k-1) % n + 1;
+  }
+}
