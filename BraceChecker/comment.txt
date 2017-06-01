@@ -1,0 +1,10 @@
+bestsolution을 보니 정말 깔끔하게 되어있다.
+
+공통적인 로직을 따로 메소드에 두어
+
+public boolean isClosing(char x, char c) {
+	return (x == '{' && c == '}') || (x == '(' && c == ')') || (x == '[' && c == ']');
+}
+
+peek()과 c를 비교해서 나오도록했다.
+
