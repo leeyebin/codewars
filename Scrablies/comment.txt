@@ -1,0 +1,1 @@
+HashMap에 <Character, Integer>로 짜서 중복이 된다면 value를 더하는 방식을 사용
