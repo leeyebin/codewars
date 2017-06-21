@@ -40,7 +40,7 @@ public class SingleLinkedList {
     			prev.next = n.next;
     		}else{
     			set.add(n.data);
-    			prev = n;
+    			prev = n;//이후에 중복일 경우 prev.next와 n.next를 이어주기 위함
     		}
     		n = n.next;
     	}
