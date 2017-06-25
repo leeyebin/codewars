@@ -9,6 +9,7 @@ public class SingleLinkedList {
     	Node oldHead = head;
     	head = null;
     	
+        //addToHead¸¦ »ç¿ë
     	for(Node n=oldHead; n!=null; n=n.next){
     		addToHead(n.data);
     	}
