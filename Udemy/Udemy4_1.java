@@ -12,7 +12,7 @@ public class Udemy4_1 {
 		int sum = 0;
 		for(char c : a){
 			sum *= 10;
-			sum += c-'0';
+			sum += c-'0'; //아스키코드값 '0'은 48을 뜻하기 때문에 빼준다.
 		
 		}
 		
