@@ -19,7 +19,7 @@ public class Udemy4_2 {
 			}else{
 				set.add(c);
 			}
-		}
+		}//Set의 특성을 이용할거면 그냥 집어넣고 원문의 길이와 set의 사이즈를 비교해보는 것도 방법일 것 같다.
 		
 		return true;
 	}
