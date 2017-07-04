@@ -8,26 +8,6 @@ public class Udemy4_4 {
 	}
 
     public static String coding(String s) {
-    	/*Map<Character, Integer> hashMap = new HashMap<Character, Integer>();
-    	
-    	for(char c: s.toCharArray()){
-    		if(hashMap.containsKey(c)){
-    			hashMap.put(c, hashMap.get(c)+1);
-    		}else{
-    			hashMap.put(c, 1);
-    		}
-    	}
-    	
-    	TreeMap<Character, Integer> tm = new TreeMap<Character, Integer>(hashMap);
-    	Iterator<Character> iteratorKey = tm.keySet().iterator();
-    	
-    	String t="";
-    	while(iteratorKey.hasNext()){
-    		char v = iteratorKey.next();
-    		t = t + v + hashMap.get(v);
-    	}
-    	
-    	return t;*/
     	
     	if(s==null){
     		return null;    				

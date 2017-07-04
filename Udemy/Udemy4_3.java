@@ -9,6 +9,7 @@ public class Udemy4_3 {
 
 	public static boolean isAnagram(String s1, String s2) {
 		int a=0;
+		비트연산자를 사용(XOR)
 		for(char c : s1.toCharArray()){
 			a ^= c;
 		}
