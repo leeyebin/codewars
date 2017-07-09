@@ -1,5 +1,3 @@
-package Udemy.Udemy11_2;
-
 import java.util.PriorityQueue;
 
 public class Top10 {
