@@ -8,9 +8,9 @@ public class Top10 {
 			q.offer(n);
 		}else{
 			int tenth = q.peek(); //큐의 가장 작은 값
-			if(n>tenth){
-				q.poll();
-				q.offer(n);
+			if(n>tenth){ //비교 후
+				q.poll(); //큐에서 작은 값을 꺼낸후
+				q.offer(n); //n을 넣는다.
 			}
 		}
 	}
