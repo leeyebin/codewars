@@ -7,7 +7,7 @@ public class Top10 {
 		if(q.size()<10){
 			q.offer(n);
 		}else{
-			int tenth = q.peek();
+			int tenth = q.peek(); //큐에서 가장 작은 수
 			if(n>tenth){
 				q.poll();
 				q.offer(n);
