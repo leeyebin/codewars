@@ -1,16 +1,14 @@
-package Udemy.Udemy11_3;
-
 import java.util.PriorityQueue;
 
 public class MidTracker {
     public PriorityQueue<Integer> minQ;
     public PriorityQueue<Integer> maxQ;
-    
+
     public MidTracker() {
         minQ = new PriorityQueue<Integer>();
         maxQ = new PriorityQueue<Integer>();
     }
-    
+
     public void read(int num) {
         if(maxQ.size()==minQ.size()){
         	if(!minQ.isEmpty()&&num>minQ.peek()){
@@ -26,7 +24,7 @@ public class MidTracker {
         	}else{
         		minQ.offer(num);
         	}
-        	
+
         }
     }
     public double median() {
