@@ -1,5 +1,5 @@
-//년,월을 함수에 넣으면 해당 년월의 처음날짜와 마지막 날짜를 구한다.
-function fn_firstDate(yyyy, mm){
+﻿//년,월을 함수에 넣으면 해당 년월의 처음날짜와 마지막 날짜를 구한다.
+function fn_firstDate(yyyy, mm){ 첫번째 날이기 때문에 그냥 1로 해도 될듯.
 	var firstDate = new Date(yyyy, mm-1, 1);
 	var firstMm = firstDate.getMonth()+1;
 	var firstDd = firstDate.getDate();
