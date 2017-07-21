@@ -7,6 +7,6 @@ function fn_roomSummary(yyyymmdd, i){
 	var lastMm = lastdate.getMonth();
 	var lastDd = lastdate.getDate();
 	var lastday = lastdate.getFullYear() + '' + (lastMm < 10 ? '0'+ lastMm : lastMm) + '' + (lastDd < 10 ? '0'+ lastDd : lastDd);
-	
-	return lastday
+
+	return lastday;
 }
