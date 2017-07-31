@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $('#navigation li').live('click', function() { //id값이 navigation인 엘리먼트중에 li 엘리먼트들을 가져와서 이것들이 클릭 되었을 때 함수가 실행되어진다.
+                $('#navigation li').removeClass('selected'); //선택된 엘리먼트들중에서 selected라는 클래스를 갖고있으면 제거한다.
+                $(this).addClass('selected'); //클릭한 li의 엘리먼트의 class명을 selected로 세팅한다.
+            })
+        </script>
+        <style type="text/css">
+            #navigation li {
+                list-style:none;
+                float:left;
+                padding:5px;
+            }
+            #navigation {
+                cursor:pointer;
+            }
+            #navigation .selected {
+                background-color:red;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="navigation">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>javascript</li>
+            <li class="selected">jQuery</li>
+            <li>PHP</li>
+            <li>mysql</li>
+        </ul>
+    </body>
+</html>
