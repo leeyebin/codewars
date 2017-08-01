@@ -10,3 +10,7 @@ function fn_roomSummary(yyyymmdd, i){
 
 	return lastday;
 }
+
+//오늘 날짜 구하는 방법
+var today = new Date();
+var yyyymmdd = today.getFullYear() + '' + ((today.getMonth()+1) < 10 ? '0'+ (today.getMonth()+1) : (today.getMonth()+1)) + '' + (today.getDate() < 10 ? '0'+ today.getDate() : today.getDate());
