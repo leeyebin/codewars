@@ -14,3 +14,9 @@ function fn_roomSummary(yyyymmdd, i){
 //오늘 날짜 구하는 방법
 var today = new Date();
 var yyyymmdd = today.getFullYear() + '' + ((today.getMonth()+1) < 10 ? '0'+ (today.getMonth()+1) : (today.getMonth()+1)) + '' + (today.getDate() < 10 ? '0'+ today.getDate() : today.getDate());
+
+//yyy-mm-dd 포맷 '-'제거하기
+//replace를 사용하되 일반 문자를 사용하면 첫번째 '-'만 제거 되기때문에 정규표현식을 사용하자
+var str_text = "2017-08-08";
+str_text.replace( "-", ""); //첫번째만 제거됨 201708-08
+str_text.replace( /-/gi, ""); //20170808
